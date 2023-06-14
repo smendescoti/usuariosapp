@@ -10,6 +10,7 @@ builder.Services.AddEntityFramework(builder.Configuration);
 builder.Services.AddServices(builder.Configuration);
 builder.Services.AddJwtBearer(builder.Configuration);
 builder.Services.AddAutoMapper();
+builder.Services.AddCorsPolicy();
 
 var app = builder.Build();
 
@@ -18,6 +19,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.UseMiddleware<ExceptionMiddleware>();
+app.UseCorsPolicy();
 
 app.Run();
 
