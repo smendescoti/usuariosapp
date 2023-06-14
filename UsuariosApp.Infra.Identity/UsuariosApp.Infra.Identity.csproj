@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UsuariosApp\UsuariosApp.Application\UsuariosApp.Application.csproj" />
+    <ProjectReference Include="..\UsuariosApp.Application\UsuariosApp.Application.csproj" />
   </ItemGroup>
 
 </Project>

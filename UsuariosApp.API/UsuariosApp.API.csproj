@@ -6,8 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	<NoWarn>$(NoWarn);1591</NoWarn>
-	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-	<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,11 +16,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
-  <ItemGroup>    
-    <ProjectReference Include="..\..\_backup2\UsuariosApp\UsuariosApp.Infra.Identity\UsuariosApp.Infra.Identity.csproj" />    
+  <ItemGroup>      
     <ProjectReference Include="..\UsuariosApp.Application\UsuariosApp.Application.csproj" />
     <ProjectReference Include="..\UsuariosApp.Domain\UsuariosApp.Domain.csproj" />
     <ProjectReference Include="..\UsuariosApp.Infra.Data\UsuariosApp.Infra.Data.csproj" />
+    <ProjectReference Include="..\UsuariosApp.Infra.Identity\UsuariosApp.Infra.Identity.csproj" />
     <ProjectReference Include="..\UsuariosApp.Infra.Messages\UsuariosApp.Infra.Messages.csproj" />
   </ItemGroup>
 
